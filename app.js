@@ -10,6 +10,7 @@ var firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+firebase.getAnalytics(app);
 
 // Refernece contactInfo collections
 let contactInfo = firebase.database().ref("infos");
